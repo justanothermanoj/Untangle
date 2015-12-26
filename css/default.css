@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li.active > a {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li.active > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li.active > a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+.jumbotron {
+  background-color: transparent;
+  color: #fff;
+}
+#site-wrapper {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#site-wrapper #site-content #site-cover {
+  padding-top: 150px;
+  background-image: url('../images/night-sky.jpg');
+  height: 600px;
+}
+body {
+  font-size: 20px;
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+}
