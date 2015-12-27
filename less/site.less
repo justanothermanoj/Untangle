@@ -1,22 +1,60 @@
-
 // site-wrapper
 #site-wrapper {
-	padding-left: 0px;
-	padding-right: 0px;
-
-	// site-header
-	#site-header {
-
-	}
-
-	// site-content
+    padding-left: 0px;
+    padding-right: 0px;
+    // site-header
+    #site-header {}
+    // site-content
     #site-content {
-
-    	// site-cover
+        // site-cover
         #site-cover {
-        	padding-top: 150px;
+            padding-top: 125px;
             background-image: url('../images/night-sky.jpg');
             height: 600px;
+            #tagline {
+                margin-bottom: 125px;
+            }
         }
+        //site-features
+        #site-features {
+            .box {
+                padding-top: 75px;
+                .heading {
+                    font-size: 2em;
+                    display: inline;
+                    position: relative;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        bottom: 150%;
+                        left: 0%;
+                        background-color: #000;
+                        -webkit-transform: scaleX(0);
+                        transform: scaleX(0);
+                        .transition(1s);
+                    }
+                }
+                &.on-hover:hover {
+                    .heading {
+                        &:before {
+                            -webkit-transform: scaleX(0.8);
+                            transform: scaleX(0.8);
+                        }
+                    }
+                }
+                &>.row {
+                    padding-top: 50px;
+                }
+            }
+        }
+    }
+
+    // site-footer
+    #site-footer {
+    	#footer-info {
+    		padding-bottom: 10px;
+    	}
     }
 }

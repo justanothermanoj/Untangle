@@ -34,3 +34,24 @@
 	background-color: transparent;
 	color: #fff;
 }
+
+// btn
+.btn {
+	.button(#fff,transparent,#000,#fff,#fff);
+
+	&.white {
+		.button(#000,#fff,#fff,transparent,#fff);
+	}
+	&.black {
+		.button(#000,transparent,#fff,#000,#000);
+	}
+    &.red {
+        .button(#e74c3c,transparent,#fff,#e74c3c,#e74c3c);
+    }
+    &.green {
+        .button(#2ecc71,transparent,#fff,#2ecc71,#2ecc71);
+    }
+    &.grey {
+        .button(#95a5a6,transparent,#fff,#95a5a6,#95a5a6);
+    }
+}

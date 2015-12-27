@@ -1,0 +1,23 @@
+// transition
+.transition (@s) {
+    -webkit-transition: all @s;
+    transition: all @s;
+}
+
+.button (@precolor, @prebgcolor, @postcolor, @postbgcolor,@bordercolor) {
+    color: @precolor;
+    background-color: @prebgcolor;
+    border: 2px solid @bordercolor;
+    padding: 10px 30px 10px 30px;
+    border-radius: 50px;
+    margin: 10px;
+    .transition(0.4s);
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover {
+        color: @postcolor;
+        outline: none;
+        background-color: @postbgcolor;
+    }
+}
