@@ -147,7 +147,8 @@
   margin-bottom: 125px;
 }
 #site-wrapper #site-content #site-features .box {
-  padding-top: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 #site-wrapper #site-content #site-features .box .heading {
   font-size: 2em;
@@ -174,6 +175,9 @@
 #site-wrapper #site-content #site-features .box > .row {
   padding-top: 50px;
 }
+#site-wrapper #site-content #site-features .box > .row .cols {
+  padding: 10px;
+}
 #site-wrapper #site-footer #footer-info {
   padding-bottom: 10px;
 }
@@ -185,6 +189,10 @@ body {
 .row {
   margin-right: 0px;
   margin-left: 0px;
+}
+ul {
+  padding-left: 0px;
+  list-style: none;
 }
 a {
   color: #244D61;
